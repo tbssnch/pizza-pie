@@ -13,6 +13,14 @@ Pizza.prototype.pizzaTotal = function() {
     this.total = 10;
     return this.total;
   }
+  else if (this.pizzaSize === "Small" && this.pizzaTopping === "Pepperoni") {
+    this.total = 10;
+    return this.total;
+  }
+  else if (this.pizzaSize === "Small" && this.pizzaTopping === "Sausage") {
+    this.total = 10;
+    return this.total;
+  }
   else if (this.pizzaSize === "Medium" && this.pizzaTopping ==="None") {
     this.total = 12;
     return this.total;
@@ -21,11 +29,27 @@ Pizza.prototype.pizzaTotal = function() {
     this.total = 14;
     return this.total;
   }
+  else if (this.pizzaSize === "Medium" && this.pizzaTopping === "Pepperoni") {
+    this.total = 14;
+    return this.total;
+  }
+  else if (this.pizzaSize === "Medium" && this.pizzaTopping === "Sausage") {
+    this.total = 14;
+    return this.total;
+  }
   else if (this.pizzaSize === "Large" && this.pizzaTopping === "None") {
     this.total = 16;
     return this.total;
   }
   else if (this.pizzaSize === "Large" && this.pizzaTopping === "Cheese") {
+    this.total = 18;
+    return this.total;
+  }
+  else if (this.pizzaSize === "Large" && this.pizzaTopping === "Pepperoni") {
+    this.total = 18;
+    return this.total;
+  }
+  else if (this.pizzaSize === "Large" && this.pizzaTopping === "Sausage") {
     this.total = 18;
     return this.total;
   }
