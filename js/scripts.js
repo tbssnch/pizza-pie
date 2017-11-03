@@ -53,10 +53,7 @@ Pizza.prototype.pizzaTotal = function() {
     this.total = 18;
     return this.total;
   }
-  // else if (this.pizzaSize === "Small" && this.pizzaTopping === "Pepperoni") {
-  //   this.total = 10;
-  //   return this.total;
-  // }
+
 }
 
 $(document).ready(function() {
@@ -68,8 +65,10 @@ $(document).ready(function() {
 
     var newPizza = new Pizza(sizeInput, toppingInput);
 
-    console.log();
-    $("ul#order-list").text();
-    $("ul#order-list").append("<li>Size: " + sizeInput + "</li>" + "<li>Toppings: " + toppingInput + "</li>" + "<li>Price: $" + newPizza.pizzaTotal() + ".00</li>");
+
+
+    $("ul#order-list").text("Size: " + sizeInput + " " + "Toppings: " + toppingInput + " " + "Price: $" + newPizza.pizzaTotal() + ".00");
+
+    // $("ul#order-list").append("<li>Size: " + sizeInput + "</li>" + "<li>Toppings: " + toppingInput + "</li>" + "<li>Price: $" + newPizza.pizzaTotal() + ".00</li>");
   });
 });
