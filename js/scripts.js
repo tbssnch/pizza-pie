@@ -13,6 +13,10 @@ Pizza.prototype.pizzaTotal = function() {
     this.total = 12;
     return this.total;
   }
+  else if (this.pizzaSize === "Large") {
+    this.total = 16;
+    return this.total;
+  }
 }
 
 $(document).ready(function() {
